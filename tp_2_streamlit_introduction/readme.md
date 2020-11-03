@@ -8,3 +8,5 @@
 ## Exécution de algo.py
 ``` python3 algo.py ```
 
+## Exécution d' app.py
+``` streamlit run app.py ```

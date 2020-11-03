@@ -12,6 +12,7 @@ git config --global user.name JonDoe && \
 git config --global user.email jon@doe.com && \ 
 git clone https://github.com/JeeG3RD/h3_docker.git
 
-EXPOSE 8000
 
-CMD ["jupyter", "notebook", "--port=8888", "--no-browser", "--ip=0.0.0.0", "--allow-root"]
+CMD ["jupyter", "notebook", "--port=8000", "--no-browser", "--allow-root"]
+
+EXPOSE 8000

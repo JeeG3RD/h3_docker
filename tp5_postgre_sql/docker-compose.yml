@@ -1,0 +1,18 @@
+version: "3.8"
+services:
+  pgdb:
+    image: "postgres"
+    env_file:
+      - database.env
+    volumes:
+      - database-data:/var/lib/postgresql/data/
+
+volumes:
+  database-data:
+
+networks:
+  node_net:
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.16.0.0/16

@@ -1,0 +1,5 @@
+version: "3.8"
+services:
+  tp_4:
+    build: .
+    image: "tp-4-heroku"

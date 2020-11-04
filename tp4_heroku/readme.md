@@ -20,8 +20,10 @@
 
 ``` heroku logs --app nom-de-l-app ```
 
+## (Fix) Important : 
+
+Ajouter ``` --server.port ``` lors du run de streamlit
+
 
 ### Adresse de l'application
 https://h3-docker-tp4-jg3rd.herokuapp.com/
-
-! Retourne une erreur actuellement

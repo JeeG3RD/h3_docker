@@ -13,7 +13,7 @@ myDb = DB("root", "azerty", "localhost")
 myDb.connect()
 
 myDb.createDB()
-myDb.importdf_nasa()
+myDb.importData()
 
 arrayInserts = []
 

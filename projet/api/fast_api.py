@@ -11,7 +11,7 @@ rfc_model = joblib.load("rfc_model.plk")
 
 @api.get("/")
 async def home():
-    return "Fast API - Nasa Astroids / Gerdy Jérome - H3 Hitema"
+    return("Fast API - Nasa Astroids / Gerdy Jérome - H3 Hitema")
 
 @api.get("/knn")
 async def knn_predict(MinimumOrbitIntersection : float=None, EstDiainMiles_min:float=None, EstDiainMiles_max:float=None, AbsoluteMagnitude:float=None, OrbitID:int=None):
@@ -68,5 +68,3 @@ async def rfc_predict(MinimumOrbitIntersection : float=None, EstDiainMiles_min:f
         "risque_dangereux": str(round(proba_danger*100, 2)) + " %"
     }
     return json.loads(json.dumps(result))
-
-#uvicorn.run(api, host="0.0.0.1", port="5000")

@@ -1,6 +1,7 @@
 # Projet Python Data
 
 #### URL du dataset 
+https://www.kaggle.com/shrutimehta/nasa-asteroids-classification
 
 ### PARTIE 5 : BDD
 
@@ -11,8 +12,6 @@
     - Dossier contenant les données csv (Import + Export)
 - sql
     - Dossier contenant les fichiers des requêtes SQL pour la création de la BDD et de la/les table(s)
-
-- data 
 
 ## Import des données :
 Exécuter ``` python3 db_import.py ```
